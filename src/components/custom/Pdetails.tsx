@@ -3,7 +3,7 @@ import singleImage1 from "../../assets/prd2.png";
 export default function ProductDetail() {
   return (
     <div
-      className="w-[85%] mx-auto h-96 flex flex-col gap-2 justify-between"
+      className="w-full   h-96 flex flex-col gap-2 justify-between"
       id="scrollable2"
     >
       <div className="w-full h-64 bg-[#F9F9F9] flex items-center justify-center">
