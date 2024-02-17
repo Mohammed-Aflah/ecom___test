@@ -4,9 +4,9 @@ import { IoMdHeartEmpty } from "react-icons/io";
 function Detail() {
   return (
     <main>
-      <div className="flex flex-col w-[85%] items-center mx-auto">
+      <div className="flex flex-col w-[85%] md:w-[80%] items-center mx-auto md:grid md:grid-cols-2  ">
         <ProductDetail />
-        <div className="w-full min-h-96 flex flex-col py-3 px-2">
+        <div className="w-full min-h-96 flex flex-col py-3 px-2 md:w-auto md:h-full md:py-0">
           <div className="text-xl">
             <h2>AirPods Max</h2>
           </div>
@@ -68,40 +68,40 @@ function Detail() {
             <div className="flex gap-1 mt-4 text-lg items-center">
               <span className="text-sm font-semibold">Internal memmory</span>
             </div>
-            <div className="flex mt-2 gap-2">
-              <div className="w-24 h-10 rounded-sm border border-[#DCDCDC] flex items-center justify-center text-sm">
+            <div className="flex mt-2 gap-2 md:gap-2">
+              <div className="w-full md:w-24  h-10 rounded-sm border border-[#DCDCDC] flex items-center justify-center text-sm">
                 256 GB
               </div>
-              <div className="w-24 h-10 rounded-sm border border-[#DCDCDC] flex items-center justify-center text-sm bg-black text-white border-0">
+              <div className="w-full md:w-24  h-10 rounded-sm border border-[#DCDCDC] flex items-center justify-center text-sm bg-black text-white border-0">
                 512 GB
               </div>
-              <div className="w-24 h-10 rounded-sm border border-[#DCDCDC] flex items-center justify-center text-sm">
+              <div className="w-full md:w-24  h-10 rounded-sm border border-[#DCDCDC] flex items-center justify-center text-sm">
                 1 TB
               </div>
-              <div className="w-24 h-10 rounded-sm border border-[#DCDCDC] flex items-center justify-center text-sm">
+              <div className="w-full md:w-24  h-10 rounded-sm border border-[#DCDCDC] flex items-center justify-center text-sm">
                 128 GB
               </div>
             </div>
           </div>
           <div>
-            <div className="flex mt-4 gap-2 justify-between py-4 border-t border-b border-[#DCDCDC]">
-              <div className="w-24 h-10 rounded-sm border border-[#DCDCDC] flex items-center justify-between text-sm ">
-                <div className="h-full flex items-center justify-center text-1xl w-7 border-r border-[#DCDCDC]">
+            <div className="flex mt-4 gap-5 justify-between py-4 border-t border-b border-[#DCDCDC] md:justify-start">
+              <div className="w-full h-10 rounded-sm border border-[#DCDCDC] flex items-center justify-between text-sm md:w-40">
+                <div className="h-full flex items-center justify-center text-1xl w-full border-r border-[#DCDCDC]">
                   +
                 </div>
-                <div className="h-full  flex items-center justify-center">
+                <div className="h-full  flex items-center justify-center w-full">
                   1
                 </div>
-                <div className="h-full flex items-center justify-center text-1xl w-7 border-l border-[#DCDCDC]">
+                <div className="h-full flex items-center justify-center text-1xl w-full border-l border-[#DCDCDC]">
                   +
                 </div>
               </div>
-              <button className="h-10 border border-[#DCDCDC] w-36 text-sm rounded-sm text-balck flex items-center justify-center gap-3">
-                Add to Whish <IoMdHeartEmpty className="text-1xl"/>
-              </button>
-              <button className="h-10 bg-black w-28 text-sm rounded-sm text-white">
+              <button className="h-10 bg-black w-full text-sm rounded-sm text-white md:w-44">
                 Add to cart
               </button>
+            </div>
+            <div className="flex gap-2 items-center mt-3">
+              Add to whish list <IoMdHeartEmpty className="text-2xl" />
             </div>
           </div>
         </div>
