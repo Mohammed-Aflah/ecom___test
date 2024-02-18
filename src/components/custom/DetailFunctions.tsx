@@ -1,5 +1,6 @@
 import start from "../../assets/Vector.svg";
 import { IoMdHeartEmpty } from "react-icons/io";
+import QuantityButton from "../common/Qtybutton";
 function DetailFunctions() {
   return (
     <div className="w-full min-h-96 flex flex-col py-3 px-2 md:w-auto md:h-full md:py-0">
@@ -81,17 +82,7 @@ function DetailFunctions() {
       </div>
       <div>
         <div className="flex mt-4 gap-5 justify-between py-4 border-t border-b border-[#DCDCDC] md:justify-start">
-          <div className="w-full h-10 rounded-sm border border-[#DCDCDC] flex items-center justify-between text-sm md:w-40">
-            <div className="h-full flex items-center justify-center text-1xl w-full border-r border-[#DCDCDC]">
-              +
-            </div>
-            <div className="h-full  flex items-center justify-center w-full">
-              1
-            </div>
-            <div className="h-full flex items-center justify-center text-1xl w-full border-l border-[#DCDCDC]">
-              +
-            </div>
-          </div>
+          <QuantityButton />
           <button className="h-10 bg-black w-full text-sm rounded-sm text-white md:w-44">
             Add to cart
           </button>
