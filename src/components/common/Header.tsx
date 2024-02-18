@@ -27,7 +27,7 @@ export const Header = () => {
           <div className=" w-[70%] h-full  flex border border-[#EBEBEB] pl-4">
             <input
               type="text"
-              className="w-full outline-none border-none placeholder-[#585858]"
+              className="w-full text-[12px] outline-none border-none placeholder-[#585858]"
               placeholder="What are you looking for?"
             />
             <div className="h-full w-14 flex items-center justify-center  bg-black">
@@ -63,8 +63,8 @@ export const Header = () => {
                       
                         <div className={`flex w-full transition-all duration-300 max-w-sm items-center  absolute right-[-200%] top-0 bg-white -z-10 ${search?"translate-x-[0]":"translate-x-[-1000%]"}`}>
                           <Input
-                            type="email"
-                            placeholder="Email"
+                            type="search"
+                            placeholder="search"
                             className={`${
                                 "w-56"
                               } transition-all duration-300 px-2 py-1 border border-gray-1000 rounded-md`}
